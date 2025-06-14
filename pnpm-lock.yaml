@@ -14,6 +14,9 @@ importers:
       '@tiptap/core':
         specifier: ^2.14.0
         version: 2.14.0(@tiptap/pm@2.13.0)
+      '@tiptap/extension-code-block':
+        specifier: ^2.14.0
+        version: 2.14.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))(@tiptap/pm@2.13.0)
       '@tiptap/extension-underline':
         specifier: ^2.14.0
         version: 2.14.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))
@@ -1435,8 +1438,8 @@ packages:
     peerDependencies:
       '@tiptap/core': ^2.7.0
 
-  '@tiptap/extension-code-block@2.13.0':
-    resolution: {integrity: sha512-HGcWmwKx4D53HY4XO0ve6lNHirpWdd91AVGVPuIkyG0wSvAzBgXy4TIgyUrHxGRE4qvNAe685RCYIA/VMBJAyg==}
+  '@tiptap/extension-code-block@2.14.0':
+    resolution: {integrity: sha512-LRYYZeh8U2XgfTsJ4houB9s9cVRt7PRfVa4MaCeOYKfowVOKQh67yV5oom8Azk9XrMPkPxDmMmdPAEPxeVYFvw==}
     peerDependencies:
       '@tiptap/core': ^2.7.0
       '@tiptap/pm': ^2.7.0
@@ -9060,7 +9063,7 @@ snapshots:
     dependencies:
       '@tiptap/core': 2.14.0(@tiptap/pm@2.13.0)
 
-  '@tiptap/extension-code-block@2.13.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))(@tiptap/pm@2.13.0)':
+  '@tiptap/extension-code-block@2.14.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))(@tiptap/pm@2.13.0)':
     dependencies:
       '@tiptap/core': 2.14.0(@tiptap/pm@2.13.0)
       '@tiptap/pm': 2.13.0
@@ -9167,7 +9170,7 @@ snapshots:
       '@tiptap/extension-bold': 2.13.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))
       '@tiptap/extension-bullet-list': 2.13.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))
       '@tiptap/extension-code': 2.13.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))
-      '@tiptap/extension-code-block': 2.13.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))(@tiptap/pm@2.13.0)
+      '@tiptap/extension-code-block': 2.14.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))(@tiptap/pm@2.13.0)
       '@tiptap/extension-document': 2.13.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))
       '@tiptap/extension-dropcursor': 2.13.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))(@tiptap/pm@2.13.0)
       '@tiptap/extension-gapcursor': 2.13.0(@tiptap/core@2.14.0(@tiptap/pm@2.13.0))(@tiptap/pm@2.13.0)

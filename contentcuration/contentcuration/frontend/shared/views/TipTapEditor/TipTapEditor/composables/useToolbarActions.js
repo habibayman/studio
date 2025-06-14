@@ -138,7 +138,9 @@ export function useToolbarActions() {
   };
 
   const handleCodeBlock = () => {
-    // TipTap code block logic may be added here
+    if (editor?.value) {
+      editor.value.chain().focus().toggleCode().run();
+    }
   };
 
   const handleFormatChange = format => {
@@ -292,6 +294,7 @@ export function useToolbarActions() {
       title: t('codeBlock'),
       icon: require('../../assets/icon-codeblock.svg'),
       handler: handleCodeBlock,
+      isActive: isMarkActive('code'),
     },
   ]);
 

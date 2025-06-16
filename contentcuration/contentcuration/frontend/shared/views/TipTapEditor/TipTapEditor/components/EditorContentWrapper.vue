@@ -41,7 +41,7 @@
   .editor-content {
     min-height: 200px;
     padding: 16px;
-    padding-inline: 16px;
+    padding-inline: 24px;
     margin-inline: 0 auto;
   }
 

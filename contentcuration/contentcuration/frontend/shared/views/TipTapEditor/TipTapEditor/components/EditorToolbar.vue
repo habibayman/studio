@@ -65,6 +65,15 @@
 
     <ToolbarDivider />
 
+    <ToolbarButton
+      :title="'clearFormatting'"
+      :icon="require('../../assets/icon-clearFormat.svg')"
+      :is-available="canClearFormat"
+      @click="handleClearFormat"
+    />
+
+    <ToolbarDivider />
+
     <!-- Lists -->
     <div
       role="group"
@@ -141,6 +150,8 @@
     setup(props, { emit }) {
       const {
         handleCopy,
+        handleClearFormat,
+        canClearFormat,
         historyActions,
         textActions,
         listActions,
@@ -160,8 +171,10 @@
 
       return {
         handleCopy,
+        handleClearFormat,
         onToolClick,
         t,
+        canClearFormat,
         historyActions,
         textActions,
         listActions,
@@ -178,7 +191,7 @@
 
   .toolbar {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     align-items: center;
     padding: 8px 12px;
     background: #f8f9fa;
